@@ -9,7 +9,7 @@ int main(){
     vector<int> arr(n);
 
      cout << "enter the array elements : "<<endl;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){ 
         cin >> arr[i];
     }
 

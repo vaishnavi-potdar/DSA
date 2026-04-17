@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int multiplicationOfElements (vector<int> &arr()){
+int multiplicationOfElements (vector<int> &arr() , int n){
     int multiplication = 1 ;
     int n = arr.size();
 
@@ -18,6 +18,6 @@ int main(){
     for(int i=0 ; i< n ; i++){
         cin >> arr[i];
     }
-     int result = multiplication(arr,n)
+     int result = multiplicationOfElements(arr,n)
      cout << result;
 }
