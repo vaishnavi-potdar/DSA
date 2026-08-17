@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int occurenceCount(int number, vector<int> &arr) {
+int occurence_Count(int number, vector<int> &arr) {
     int count = 0;
 
     for (int i = 0; i < arr.size(); i++) {
@@ -26,7 +26,7 @@ int main() {
     int number;
     cin >> number;
 
-    cout << occurenceCount(number, arr);
+    cout << occurence_Count(number, arr);
 
     return 0;
 }
