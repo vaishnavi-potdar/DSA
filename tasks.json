@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C++: Build Current File",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/output/${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "C++: Build and Run Current File",
+            "type": "shell",
+            "dependsOn": "C++: Build Current File",
+            "command": "${workspaceFolder}/output/${fileBasenameNoExtension}.exe",
+            "options": {
+                "cwd": "${workspaceFolder}/output"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
